@@ -1,0 +1,2 @@
+C:\Users\User\NoteApp\bin\Release\net8.0\win-x64\publish\NoteApp.pdb
+C:\Users\User\NoteApp\bin\Release\net8.0\win-x64\publish\NoteApp.exe

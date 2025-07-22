@@ -1,0 +1,113 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Width="400" Height="550"
+        x:Class="NoteApp.MainWindow"
+        Icon="avares://NoteApp/Assets/FavIcon.ico"
+        Background="LightGray"
+        SystemDecorations="None"
+        TransparencyBackgroundFallback="White"
+        TransparencyLevelHint="None"
+        Title="CoolNoteApp"
+        Name="WINDOWWWWWWWW">
+
+    <Window.Styles>
+        <Style Selector="TextBox:pointerover /template/ Border#PART_BorderElement">
+            <Setter Property="Background" Value=""/>
+        </Style>
+        <Style Selector="TextBox:focus /template/ Border#PART_BorderElement">
+            <Setter Property="Background" Value=""/>
+        </Style>
+        <Style Selector=":is(Button).FontSizeButton">
+            <Setter Property="Background" Value="transparent"/>
+            <Setter Property="Margin" Value="1"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+    </Window.Styles>
+
+
+
+    <DockPanel>
+         <Border Name="NavTopBar" Background="#0fa6a8" Height="36" DockPanel.Dock="Top" PointerPressed="OnPointerPressed" PointerReleased="OnPointerReleased">
+            <Grid ColumnDefinitions="*, Auto, Auto, Auto" VerticalAlignment="Center" Background="Transparent">
+                <Panel>
+                    <Image Height="30" Width="30" Source="avares://NoteApp/Assets/FavIcon.ico"/>
+                    <TextBlock Text="  CoolNoteApp" Foreground="White"  HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+                </Panel>
+                
+                <Button Grid.Column="1" Content=" 🗕" Width="40" Height="36" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" Click="Minimize_Click"
+                        Foreground="White"/>
+
+                
+                <Button Grid.Column="2" Content=" 🗖" Width="40" Height="36" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" Click="Maximize_Click"
+                        Foreground="White"/>
+
+                
+                <Button Grid.Column="3" Content=" 🗙" Width="40" Height="36" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" Click="Close_Click"
+                        Foreground="White"/>
+            </Grid>
+        </Border>
+
+        <Grid DockPanel.Dock="Top" Name="mainTopGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" /> 
+            </Grid.ColumnDefinitions>
+
+
+            <Menu Grid.Column="0">
+                <MenuItem Header="_☰ File" Name="Menu_file">
+                    <MenuItem Name="_1" Header="🗍 _New" Click="NewMenu_Click" HotKey="Ctrl+N"/>
+                    <MenuItem Name="_2" Header="🗁 _Open..." Click="OpenMenu_Click" HotKey="Ctrl+O"/>
+                    <MenuItem Name="_3" Header="🗀 _Save" Click="SaveMenu_Click" HotKey="Ctrl+S"/>
+                    <MenuItem Name="_4" Header="🗐 _Save as" Click="SaveAsMenu_Click" HotKey="Ctrl+Q"/>
+                    <Separator Name="sep1" Background="#FF000000"/>
+                    <MenuItem Name="_5" Header="🗶 _Exit" Click="Close_Click" HotKey="Ctrl+E"/>
+                </MenuItem>
+                <MenuItem Header="✐ _Edit" Name="Menu_edit">
+                    <MenuItem Name="_6" Header="_⤾ Undo" Click="UndoMenu_Click" HotKey="Ctrl+U"/>
+                    <Separator Name="sep2" Background="#FF000000"/>
+                    <MenuItem Name="_7" Header="_⤿ Redo" Click="RedoMenu_Click" HotKey="Ctrl+R"/>
+                </MenuItem>
+                <MenuItem Header="␦ _Help ?" Name="Menu_help">
+                    <MenuItem Name="_8" Header="⮞ _About" Click="AboutMenu_Click"/>
+                    <MenuItem Name="_9" Header="⮞ _HotKeys" Click="HotKeysMenu_Click"/>
+                </MenuItem>
+            </Menu>
+
+        
+            <Menu Grid.Column="1"  HorizontalAlignment="Right">
+                <MenuItem Header="_⚙" Name="Menu_Options">
+                    <CheckBox Name="TextWrapCheckBox" IsChecked="False">Enable TextWrap</CheckBox>
+                    <ToggleSwitch Name="ThemeChangeButton" 
+                            Content="Change Theme" 
+                            IsChecked="False"
+                            OnContent="Night"
+                            OffContent="Day"/>
+                    <SplitButton Content="Font-Size" Name="SplitButtonFontSize">
+                        <SplitButton.Flyout>
+                            <Flyout>
+                                <Flyout.Content>
+                                    <StackPanel>
+                                        <Button Name="_10" Classes="FontSizeButton" Content="10" Click="OnFontSizeClick"/>
+                                        <Button Name="_11" Classes="FontSizeButton" Content="12" Click="OnFontSizeClick"/>
+                                        <Button Name="_12" Classes="FontSizeButton" Content="14" Click="OnFontSizeClick"/>
+                                        <Button Name="_13" Classes="FontSizeButton" Content="16" Click="OnFontSizeClick"/>
+                                        <Button Name="_14" Classes="FontSizeButton" Content="18" Click="OnFontSizeClick"/>
+                                        <Button Name="_15" Classes="FontSizeButton" Content="20" Click="OnFontSizeClick"/>
+                                    </StackPanel>
+                                </Flyout.Content>
+                            </Flyout>
+                        </SplitButton.Flyout>
+                    </SplitButton>
+                </MenuItem>
+            </Menu>
+        </Grid>
+
+        <TextBox Name="MainText" Watermark="Write Here..." AcceptsReturn="true" AcceptsTab="true" TextWrapping="NoWrap"/>
+
+    </DockPanel>
+</Window>

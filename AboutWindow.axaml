@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="NoteApp.AboutWindow"
+        Width="800" Height="500"
+        Title="About Cool Note Pad"
+        Icon="/Assets/FavIcon.ico">
+    <StackPanel Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <TextBlock Text="Cool Note Pad" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Margin="0,0,0,10" />
+        <TextBlock Text="Version 1.0" />
+        <TextBlock Text="Made with Avalonia UI, .Net, C#" />
+        <TextBlock Text="Project was made and designed by a brazillian guy," />
+        <TextBlock Text="its made for a more visual appealing experience." />
+        <Button Content="OK" Width="80" Margin="0,15,0,0" HorizontalAlignment="Center" Click="OnOkClick"/>
+        <Separator Margin="0,10,0,10" />
+        <TextBlock Text="© 2025 OppDevTeam" FontSize="12" />
+        <TextBlock Text="Copyright 2025 Afonso B. Henriques" FontSize="12" />
+
+        <TextBlock Text="Permission is hereby granted, free of charge, to any person obtaining a" FontSize="12" />
+        <TextBlock Text="copy of this software and associated documentation files (the “Software”)," FontSize="12" />
+        <TextBlock Text="to deal in the Software without restriction, including without limitation " FontSize="12" />
+        <TextBlock Text="the rights to use, copy, modify, merge, publish, distribute, sublicense, " FontSize="12" />
+        <TextBlock Text="and/or sell copies of the Software, and to permit persons to whom the Software " FontSize="12" />
+        <TextBlock Text="is furnished to do so, subject to the following conditions:" FontSize="12" />
+
+        <TextBlock Text="The above copyright notice and this permission notice shall be included in all " FontSize="12" />
+        <TextBlock Text="copies or substantial portions of the Software." FontSize="12" />
+
+        <TextBlock Text="THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED" FontSize="12" />
+        <TextBlock Text="INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR" FontSize="12" />
+        <TextBlock Text="PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE" FontSize="12" />
+        <TextBlock Text="FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE," FontSize="12" />
+        <TextBlock Text="ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE." FontSize="12" />
+        
+    </StackPanel>
+</Window>
