@@ -15,7 +15,7 @@ I was think, "Wow! my text editor is so ugly, wait i am a horrible programer why
 
 ## Download (Only Windows For now)
 Alpha V0.1 :
-> Link for Download: [Download]()<br>
+> Link for Download: [Download](https://github.com/Kywyy/CoolNoteApp/tags)<br>
 > This Version is a very early release, the Redo/Undo Action doesn't work, and there are some issues with styling and saving opened files outside "NoteApp" main file folder.
 
 Alpha V0.2 :
