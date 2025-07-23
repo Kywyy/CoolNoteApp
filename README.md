@@ -5,7 +5,8 @@
 ## About
 > [!NOTE]
 > This App is still glitchy, still fixing some issues, if you find a bug(Its not a bug its a feature) i will most likely trying to fix it, but make sure to
-> tell me about it, help me make the bets note app ever made!
+> tell me about it, help me make the bets note app ever made!<br>
+> To use current Versions of CoolNoteApp you need .Net Runtime, if you wish you can install it here : [Download](https://dotnet.microsoft.com/en-us/download/dotnet/8.0/runtime)
 
 > Made with Avalonia UI(11.3.2)<br>
 > .Net(8.0)<br>
