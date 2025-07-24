@@ -15,11 +15,11 @@
 - I was think, "Wow! my text editor is so ugly, wait i am a horrible programer why dont i make mine?", and thats how it started. This App is created to be a more Visual Appealing app, for now we only have Night/Day modes, However i wish to have more modes and ways to make your own custom note app. 
 
 ## Download (Only Windows For now)
-Alpha V0.1 :
+### Alpha V0.1 :
 > Link for Download: [Download](https://github.com/Kywyy/CoolNoteApp/tags)<br>
 > This Version is a very early release, the Redo/Undo Action doesn't work, and there are some issues with styling and saving opened files outside "NoteApp" main file folder.
 
-Alpha V0.2 :
+### Alpha V0.2 :
 > Link for Download: ... <br>
 > Work in Progress...
 
