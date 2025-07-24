@@ -12,7 +12,8 @@
 > .Net(8.0)<br>
 > C#<br>
 <hr>
-- I was think, "Wow! my text editor is so ugly, wait i am a horrible programer why dont i make mine?", and thats how it started. This App is created to be a more Visual Appealing app, for now we only have Night/Day modes, However i wish to have more modes and ways to make your own custom note app. 
+- I was think, "Wow! my text editor is so ugly, wait i am a horrible programer why dont i make mine?", and thats how it started. This App is created to be a more Visual Appealing app, for now we only have Night/Day modes, However i wish to have more modes and ways to make your own custom note app.<br>
+- Would love to have suggestions on what to do and how the app feels, still a long way to go, plan to update regularly adding more and more mechanics with a lighter and smoother performance.
 
 ## Download (Only Windows For now)
 ### Alpha V0.1 :
