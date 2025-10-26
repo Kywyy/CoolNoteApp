@@ -72,3 +72,4 @@ C:\Users\User\NoteApp\obj\Debug\net8.0\refint\NoteApp.dll
 C:\Users\User\NoteApp\obj\Debug\net8.0\NoteApp.pdb
 C:\Users\User\NoteApp\obj\Debug\net8.0\NoteApp.genruntimeconfig.cache
 C:\Users\User\NoteApp\obj\Debug\net8.0\ref\NoteApp.dll
+C:\Users\User\NoteApp\obj\Debug\net8.0\NoteApp.sourcelink.json

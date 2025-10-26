@@ -8,6 +8,7 @@ using Avalonia.Platform;
 using Avalonia.Platform.Storage;
 using Avalonia.Styling;
 using System;
+using System.Collections.Generic;
 using System.IO;
 
 
@@ -113,14 +114,16 @@ public partial class MainWindow : Window
         if (file_Name == null)
         {
             saveFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "NoteApp", "NewNote.txt");
-            string filePath = Path.Combine(saveFolder);
+            string filePath = saveFolder;
             File.WriteAllText(filePath, MainText.Text);
         }
-        else
+        else if (current_File != null)
         {
-            saveFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "NoteApp", file_Name);
-            string filePath = Path.Combine(saveFolder);
-            File.WriteAllText(filePath, MainText.Text);
+            string? filePath = current_File.TryGetLocalPath();
+            if (!string.IsNullOrEmpty(filePath))
+            {
+                File.WriteAllText(filePath, MainText.Text);
+            }
         }
     }
 
@@ -265,17 +268,21 @@ public partial class MainWindow : Window
         }
     }
 
-
-
     //second divider
     private void UndoMenu_Click(object? sender, RoutedEventArgs e)
     {
-
+        if (MainText.CanUndo)
+        {
+            MainText.Undo();
+        }
     }
 
     private void RedoMenu_Click(object? sender, RoutedEventArgs e)
     {
-
+        if (MainText.CanRedo)
+        {
+            MainText.Redo();
+        }
     }
 
 

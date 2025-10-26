@@ -21,7 +21,7 @@ public partial class App : Application
 
             if (!string.IsNullOrEmpty(Program.FileToOpen))
             {
-                mainWindow.OpenExistingFile(Program.FileToOpen); // seu método de carregamento
+                mainWindow.OpenExistingFile(Program.FileToOpen);
             }
             desktop.MainWindow = mainWindow;
         }

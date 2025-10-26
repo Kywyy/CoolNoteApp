@@ -9,8 +9,10 @@
         SystemDecorations="None"
         TransparencyBackgroundFallback="White"
         TransparencyLevelHint="None"
+        CanResize="True"
         Title="CoolNoteApp"
-        Name="WINDOWWWWWWWW">
+        Name="WINDOWWWWWWWW"
+        >
 
     <Window.Styles>
         <Style Selector="TextBox:pointerover /template/ Border#PART_BorderElement">
@@ -28,10 +30,8 @@
         </Style>
     </Window.Styles>
 
-
-
     <DockPanel>
-         <Border Name="NavTopBar" Background="#0fa6a8" Height="36" DockPanel.Dock="Top" PointerPressed="OnPointerPressed" PointerReleased="OnPointerReleased">
+        <Border Name="NavTopBar" Background="#0fa6a8" Height="36" DockPanel.Dock="Top" PointerPressed="OnPointerPressed" PointerReleased="OnPointerReleased">
             <Grid ColumnDefinitions="*, Auto, Auto, Auto" VerticalAlignment="Center" Background="Transparent">
                 <Panel>
                     <Image Height="30" Width="30" Source="avares://NoteApp/Assets/FavIcon.ico"/>
@@ -56,7 +56,6 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" /> 
             </Grid.ColumnDefinitions>
-
 
             <Menu Grid.Column="0">
                 <MenuItem Header="_☰ File" Name="Menu_file">
@@ -107,7 +106,7 @@
             </Menu>
         </Grid>
 
-        <TextBox Name="MainText" Watermark="Write Here..." AcceptsReturn="true" AcceptsTab="true" TextWrapping="NoWrap"/>
+        <TextBox Name="MainText" Watermark="Write Here..." UndoLimit="500" IsUndoEnabled="True" AcceptsReturn="true" AcceptsTab="true" TextWrapping="NoWrap"/>
 
     </DockPanel>
 </Window>

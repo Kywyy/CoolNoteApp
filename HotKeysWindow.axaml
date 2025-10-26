@@ -13,8 +13,8 @@
         <TextBlock Text="Save => 'Ctrl+S' "/>
         <TextBlock Text="Save as => 'Ctrl+Q' "/>
         <TextBlock Text="Exit Cool Note App (please dont) => 'Ctrl+E' "/>
-        <TextBlock Text="Undo Last Action => 'Ctrl+U' "/>
-        <TextBlock Text="Redo Last Action => 'Ctrl+R' "/>
+        <TextBlock Text="Undo Last Action => 'Ctrl+Z' "/>
+        <TextBlock Text="Redo Last Action => 'Ctrl+Y' "/>
         <TextBlock Text="Cut => 'Ctrl+X' "/>
         <TextBlock Text="Copy => 'Ctrl+C' "/>
         <TextBlock Text="Paste => 'Ctrl+V' "/>
