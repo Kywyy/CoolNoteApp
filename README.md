@@ -15,5 +15,6 @@ Cool Note App is a personal project made to have a better visual then other Note
 - [X] Can use without any external downloads.
 - [ ] Have support for all the OS (Operating Systems)
 
-### Try it Yourself(Newest Version):
-> 
+### Try it Yourself:
+> (First Ever Version) : [Download]()
+> (Newest Version) : [Download]()
