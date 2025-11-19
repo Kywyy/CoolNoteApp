@@ -16,5 +16,7 @@ Cool Note App is a personal project made to have a better visual then other Note
 - [ ] Have support for all the OS (Operating Systems)
 
 ### Try it Yourself:
-> (First Ever Version) : [Download]()
+> (First Ever Version) : [Download](https://github.com/Kywyy/CoolNoteApp/releases/tag/AlphaV0.1)
+  > Requires .Net framework
+  
 > (Newest Version) : [Download]()
